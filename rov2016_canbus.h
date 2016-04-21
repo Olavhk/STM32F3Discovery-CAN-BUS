@@ -34,6 +34,7 @@ typedef enum {
 #define TOP_BASE 						0x200
 #define TOP_XBOX_CTRLS					TOP_BASE
 #define TOP_XBOX_AXES					(TOP_BASE + 1)
+#define TOP_POWR_CTRL					(TOP_BASE + 2)
 
 #define SENSOR_BASE 					0x300
 #define SENSOR_AN_RAW					SENSOR_BASE
@@ -47,16 +48,11 @@ typedef enum {
 #define SENSOR_CURR_TEST				(SENSOR_BASE + 8)
 
 #define POWR_BASE 						0x400
-#define POWR_STATUS						POWR_BASE
-#define POWR_MOTOR_SWITCH				(POWR_BASE + 1)
-#define POWR_LIGHT_SWITCH				(POWR_BASE + 2)
-#define POWR_LIGHT_DIMMING 				(POWR_BASE + 3)
-#define POWR_COOLING_FAN_SWITCH			(POWR_BASE + 4)
-#define POWR_ENCODER_ONE				(POWR_BASE + 5)
-#define POWR_ENCODER_TOW				(POWR_BASE + 6)
-#define POWR_CAM_PWM					(POWR_BASE + 7)
-#define POWR_PWM_MANIP_ONE				(POWR_BASE + 8)
-#define POWR_PWM_MANIP_TWO				(POWR_BASE + 9)
+#define POWR_THR_CURRENT				POWR_BASE
+#define POWR_MAN_CURRENT				(POWR_BASE + 1)
+#define POWR_ALIVE					(POWR_BASE + 2)
+#define POWR_CAM_PWM					(POWR_BASE + 3)
+
 
 #define VESC_BASE						0x500
 #define VESC_CURRENT_BASE				0x500
